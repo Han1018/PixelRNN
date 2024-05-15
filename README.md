@@ -4,6 +4,6 @@ PyTorch streamlized implementation of PixelCNN from [Pixel Recurrent Neural Netw
 
 so far is the pixelCNN, i will change the code to pixelRNN
 Todo list:
-- streamlized the old code
-- apply the old pixelCNN to mnist first to make sure it will work
-- change the pixelCNN to pixelRNN
+- [ ] streamlized the old code
+- [ ] apply the old pixelCNN to mnist first to make sure it will work successfully
+- [ ] change the pixelCNN to pixelRNN
