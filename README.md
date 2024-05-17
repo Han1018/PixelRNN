@@ -9,6 +9,7 @@ so far is the pixelCNN, i will change the code to pixelRNN
 - [ ] change the pixelCNN to pixelRNN
 
 ## Repo env
+- cuda 12.1
 - Python 3.x
 - Pytorch
 
@@ -27,7 +28,13 @@ conda env create -f environment.yml
 
 3. Activate the virtual environment:
 ```bash
-mamba activate pixelcnn
+conda activate pixelcnn
+```
+
+4. Install PyTorch:
+    Visit the [PyTorch official website](https://pytorch.org/get-started/locally/) and follow the instructions to install the appropriate version for your system and CUDA setup. Here is a common example for Ubuntu, Conda:
+```bash
+conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
 ```
 
 ## Training

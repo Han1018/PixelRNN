@@ -1,0 +1,6 @@
+name: pixelcnn
+channels:
+  - defaults
+dependencies:
+  - python=3.12.3
+  - tqdm
