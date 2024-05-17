@@ -1,6 +1,9 @@
 name: pixelcnn
 channels:
   - defaults
+  - conda-forge
 dependencies:
   - python=3.12.3
+  - pytorch=2.3.0
+  - torchvision=0.18.0
   - tqdm
