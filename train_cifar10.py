@@ -7,7 +7,7 @@ from torchvision.utils import save_image
 from tqdm import tqdm
 import os
 import numpy as np
-from models import PixelCNN
+from src.models import PixelCNN
 
 # 超參數設定
 batch_size = 32

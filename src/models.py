@@ -1,5 +1,5 @@
 import torch.nn as nn
-from layers import maskAConv, MaskBConvBlock
+from src.layers import maskAConv, MaskBConvBlock
 
 
 class PixelCNN(nn.Module):

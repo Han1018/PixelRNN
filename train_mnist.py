@@ -6,7 +6,7 @@ from torchvision import datasets, transforms
 from torchvision.utils import save_image
 from tqdm import tqdm
 import os
-from models import PixelCNN
+from src.models import PixelCNN
 
 # Hyperparameters
 batch_size = 128
