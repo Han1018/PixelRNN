@@ -29,8 +29,9 @@ class MaskedConv2d(nn.Conv2d):
             mask[:, :, height // 2, width // 2:] = 0
             mask[:, :, height // 2 + 1:] = 0
         else:
-            mask[:, :, height // 2, width // 2 + 1:] = 0
-            mask[:, :, height // 2] = 0
+            # mask[:, :, height // 2, width // 2:] = 0              # suggested to use this for grayscale image
+            mask[:, :, height // 2, width // 2 + 1:] = 0            # suggested to use this for RGB image
+            mask[:, :, height // 2 + 1:] = 0
         self.register_buffer('mask', mask)
 
     def forward(self, x):
@@ -38,7 +39,7 @@ class MaskedConv2d(nn.Conv2d):
         return super(MaskedConv2d, self).forward(x)
 
 
-def maskAConv(c_in=3, c_out=256, k_size=7, stride=1, pad=3):
+def maskAConv(c_in=1, c_out=256, k_size=7, stride=1, pad=3):
     """2D Masked Convolution (type A)"""
     return nn.Sequential(
         MaskedConv2d('A', c_in, c_out, k_size, stride, pad),
