@@ -6,7 +6,8 @@ so far is the pixelCNN, i will change the code to pixelRNN
 ## Todo list:
 - [x] streamlized the old code
 - [x] apply the old pixelCNN to mnist first to make sure it will work successfully
-- [ ] change the pixelCNN to pixelRNN
+- [ ] build a conv, peephole lstm
+- [ ] intergate the lstm, make PixelCNN to PixelRNN
 
 ## Repo env
 - cuda 12.1
